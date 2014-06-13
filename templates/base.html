@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>
+            Monitor
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <!-- START: Meta Tags -->
+        {% block meta_tags %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta name="description" content="Monitor">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        {% end %}
+
+        {% block extra_meta_tags %}
+
+        {% end %}
+        <!-- END: Meta Tags -->
+
+        {% block link_tags %}
+        <link rel="shortcut icon" type="image/png" href="">
+        <link rel="apple-touch-icon" href="">
+        <link rel="apple-touch-icon" sizes="72x72" href="">
+        {% end %}
+
+        {% block css %}
+            {% include "snippets/_stylesheets.html" %}
+        {% end %}
+
+        {% block extra_head %}{% end %}
+
+        <!-- START: head scripts -->
+        {% block head_script %}
+            {% include "snippets/_head_script.html" %}
+        {% end %}
+        {% block extra_head_script %}{% end %}
+        <!-- END: head scripts -->
+    </head>
+
+
+    <body class="">
+        <div class="message-container">
+            
+        </div>
+
+        <!-- START: Header -->
+        {% block header %}
+            <div class="header-container">
+              {% include "snippets/_header.html" %}
+            </div>
+        {% end %}
+        <!-- END: Header -->
+
+        <!-- START: Main Body -->
+        {% block body %}{% end %}
+        <!-- END: Main Body -->
+
+        <!-- START: Footer -->
+        {% block footer %}
+            <div class="footer-container">
+                {% include "snippets/_footer.html" %}
+            </div>
+        {% end %}
+        <!-- END: Footer -->
+
+        <!-- START: body scripts -->
+        {% block script %}
+            {% include "snippets/_scripts.html" %}
+        {% end %}
+
+        {% block extra_script %}{% end %}
+        <!-- END: body scripts -->
+    </body>
+</html>

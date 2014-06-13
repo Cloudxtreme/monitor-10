@@ -1,0 +1,16 @@
+DEBUG = True
+
+API_BASE_URI = 'http://127.0.0.1:8000/api/v5'
+SITE_HTTP_URL = 'http://127.0.0.1:8888'
+SITE_HTTPS_URL = ''
+BRANDSFEVER_SG_HTTP_URL = 'https://www.brandsfever.com'
+
+SESSION_COOKIE_DOMAIN = "127.0.0.1"
+
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_HTTPONLY = True
+
+COOKIE_SECRET = "your-cookie-secret"
+LOGIN_URL = "/login/"
+
+INSTANCE_TYPE = ""
